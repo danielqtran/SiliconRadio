@@ -1,3 +1,5 @@
+/* Media Bar */
+
 .mediaBar {
     height: 5vh;
     background-color: black;
@@ -6,9 +8,6 @@
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: flex-start;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 .mediaBar i {
@@ -19,11 +18,36 @@
     margin: 5px 20px;
 }
 
+/* Navbar */
+
 .navbar {
-    top: 5vh;
     width: 100%;
 }
 
 .nav-link {
     text-transform: uppercase;
 }
+
+/* Hero */
+
+.hero {
+    color: black;
+    height: auto;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.scrollingWelcome {
+    display: block; /* Important to give the content a width */
+  
+    width: 100%;
+    transform: translateX(50%); /* Animation start out of the screen */
+  
+    /* Add the animation */
+    animation: move 20s linear infinite /* infinite make reapeat the animation indefinitely */;
+  }
+  
+  /* Create the animation */
+  @keyframes move {
+    to { transform: translateX(-100%); }
+  }
