@@ -1,0 +1,29 @@
+.mediaBar {
+    height: 5vh;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.mediaBar i {
+    margin: 5px 0px 5px 20px;
+}
+
+.mediaBar p {
+    margin: 5px 20px;
+}
+
+.navbar {
+    top: 5vh;
+    width: 100%;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
