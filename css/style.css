@@ -3,12 +3,13 @@
 .mediaBar {
     height: 5vh;
     background-color: black;
-    color: yellow;
+    color: #D5D921;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: flex-start;
     font-family: 'Rubik', sans-serif;
+    position: sticky;
 }
 
 .mediaBar i {
@@ -42,21 +43,43 @@
     background-color: lightblue;
     text-align: center;
     font-family: 'Bungee', sans-serif;
-    background-image:url(../images/hero_bg.png);
+    background-image: url(../images/hero_bg.png);
     background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    align-content: center;
+}
+
+.btn-light {
+    border: 2px solid black;
+}
+
+.hero .btn-light {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.btn-light:hover {
+    background-color: #691AEC;
+    color: white;
 }
 
 .scrollingWelcome {
-    display: block; /* Important to give the content a width */
-  
+    margin: 60px 0px;
     width: 100%;
-    transform: translateX(50%); /* Animation start out of the screen */
-  
+    transform: translateX(100%);
+    /* Animation start out of the screen */
+
     /* Add the animation */
-    animation: move 20s linear infinite /* infinite make reapeat the animation indefinitely */;
-  }
-  
-  /* Create the animation */
-  @keyframes move {
-    to { transform: translateX(-100%); }
-  }
+    animation: move 20s linear infinite
+        /* infinite make reapeat the animation indefinitely */
+    ;
+}
+
+/* Create the animation */
+@keyframes move {
+    to {
+        transform: translateX(-100%);
+    }
+}
