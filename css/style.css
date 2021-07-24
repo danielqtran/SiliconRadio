@@ -3,11 +3,12 @@
 .mediaBar {
     height: 5vh;
     background-color: black;
-    color: white;
+    color: yellow;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: flex-start;
+    font-family: 'Rubik', sans-serif;
 }
 
 .mediaBar i {
@@ -22,6 +23,11 @@
 
 .navbar {
     width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar-brand {
+    margin: 0px;
 }
 
 .nav-link {
@@ -31,10 +37,13 @@
 /* Hero */
 
 .hero {
-    color: black;
-    height: auto;
+    color: white;
+    height: 727px;
     background-color: lightblue;
     text-align: center;
+    font-family: 'Bungee', sans-serif;
+    background-image:url(../images/hero_bg.png);
+    background-repeat: no-repeat;
 }
 
 .scrollingWelcome {
