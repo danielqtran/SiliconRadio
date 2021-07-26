@@ -25,21 +25,39 @@
 
 .navbar {
     width: 100%;
-    font-family: 'Rubik', sans-serif;
-}
-
-.navbar-brand {
-    margin: 0px;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
 }
 
 .nav-link {
     text-transform: uppercase;
 }
 
+.nav-item:hover {
+    color: #691AEC !important;
+}
+
+.navbar-collapse {
+    flex: 1 !important;
+}
+
+.navbar-brand {
+    flex: 1;
+    margin-right: 0px;
+}
+
+
+.search {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
 /* Hero */
 
 .hero {
-    color: white;
+    color: white !important;
     height: 727px;
     background-color: lightblue;
     text-align: center;
@@ -64,7 +82,7 @@
     width: 100vw;
 }
 
-.hero .btn-light {
+.btn-light {
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
@@ -101,7 +119,51 @@
     border-radius: 0px;
 }
 
-/* Typography */ 
+.card-body {
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chip {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card img {
+    background-color: #333333;
+}
+
+.btn-secondary {
+    background-color: #D5D921;
+    border-radius: 20px;
+    padding: 7px 20px;
+    border: 0px;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #69E355;
+    color: black;
+}
+
+.chip .active {
+    background-color: #69E355;
+    color: black;
+    border: 2px solid black;
+}
+
+.sessionLink {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Typography */
 .heading1 {
     font-family: 'Bungee', sans-serif;
     font-size: 105px;
@@ -110,8 +172,14 @@
 .heading2 {
     font-family: 'Bungee', sans-serif;
     font-size: 46px;
-
 }
+
+.heading3pre {
+    font-family: 'Space Mono', monospace;
+    font-size: 26px;
+    color: #62586C;
+}
+
 .heading3 {
     font-family: 'Rubik', sans-serif;
     font-size: 50px;
@@ -119,8 +187,47 @@
     text-transform: uppercase;
 }
 
-.heading3pre {
+.heading4 {
     font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
     font-size: 26px;
-    color: #62586C;
+    text-transform: uppercase;
+}
+
+.heading4sub {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: #000000;
+}
+
+.heading5 {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.nb {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.nblinks {
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    flex: 1;
 }
