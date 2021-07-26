@@ -51,7 +51,10 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    margin-right: 1rem;
+}
+
+.search i {
+    padding-right: 1rem;
 }
 
 /* Hero */
@@ -144,6 +147,7 @@
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
     margin-left: 1rem;
+    font-weight: 500;
 }
 
 .btn-secondary:hover {
