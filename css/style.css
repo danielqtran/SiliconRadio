@@ -97,23 +97,28 @@
     border: 2px solid black;
 }
 
-.scrollingWelcome {
-    margin: 60px 0px;
-    width: 100%;
+.scrollingWelcome .heading1 {
     white-space: nowrap;
+    position: relative;
     overflow: hidden;
     transform: translateX(100%);
-    animation: marquee 20s linear infinite;
+    animation: marquee 15s linear infinite;
 }
 
 @keyframes marquee {
-    to {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
+/* Latest */
+
 .latest {
-    margin: 1.5rem;
+    padding: 1.5rem;
 }
 
 /* Cards */
@@ -167,6 +172,43 @@
     justify-content: flex-end;
 }
 
+/* Upcoming */
+
+.upcoming {
+    background-color: black;
+    padding: 1.5rem;
+}
+
+.upcoming .heading3pre {
+    color: #D5D921;
+}
+
+.upcoming .heading3 {
+    color: white;
+}
+
+.upcoming .heading1 {
+    color: white;
+    font-size: 6.25rem;
+}
+
+.upcoming .card-img-overlay {
+    display: grid;
+    align-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.upcoming .card-body {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.upcoming .heading4,.heading4sub {
+    color: white;
+}
+
+
 /* Typography */
 .heading1 {
     font-family: 'Bungee', sans-serif;
@@ -204,7 +246,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
-    color: #000000;
 }
 
 .heading5 {
@@ -213,7 +254,6 @@
     font-weight: normal;
     font-size: 17px;
     text-transform: capitalize;
-    color: #000000;
 }
 
 p {
