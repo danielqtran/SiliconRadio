@@ -1,7 +1,6 @@
 /* Media Bar */
 
 .mediaBar {
-    height: 5vh;
     background-color: black;
     color: #D5D921;
     display: grid;
@@ -23,7 +22,8 @@
 
 /* Navbar */
 
-.navbar {
+.navbar,
+.nav {
     width: 100%;
     font-family: 'Space Mono', monospace;
     font-size: 20px;
@@ -33,7 +33,7 @@
     text-transform: uppercase;
 }
 
-.nav-item:hover {
+.nav-link:hover {
     color: #691AEC !important;
 }
 
@@ -129,9 +129,6 @@
 
 .card-body {
     background-color: #F1F1F1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .chip {
@@ -166,7 +163,7 @@
     border: 2px solid black;
 }
 
-.sessionLink {
+.linkBtn {
     margin-top: 1.5rem;
     display: flex;
     justify-content: flex-end;
@@ -174,7 +171,8 @@
 
 /* Upcoming */
 
-.upcoming {
+.upcoming,
+.newsletter {
     background-color: black;
     padding: 1.5rem;
 }
@@ -204,10 +202,94 @@
     border: 2px solid white;
 }
 
-.upcoming .heading4,.heading4sub {
+.upcoming .heading4,
+.heading4sub {
     color: white;
 }
 
+/* Curations */
+
+.curations {
+    padding: 1.5rem;
+}
+
+.curations .card-body {
+    background-color: white;
+}
+
+.curations .heading4 {
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "footerLinks socialLinks""copyright socialLinks";
+    padding: 3rem 1.5rem;
+}
+
+footer .nav {
+    grid-area: footerLinks;
+}
+
+footer .nav-link {
+    color: black;
+}
+
+footer .nav-link:hover {
+    color: #691AEC;
+}
+
+.socialLinks {
+    grid-area: socialLinks;
+    font-size: 3rem;
+}
+
+.fab {
+    padding: .5rem;
+}
+
+.copyright {
+    grid-area: copyright;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    color: #B8B8B8;
+    padding-left: 1rem;
+}
+
+/* Newsletter */
+
+.newsletter {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 4rem 0rem;
+}
+
+.newsletterHeading {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.newsletter .row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.newsletter .heading3 {
+    font-size: 30px;
+    color: white;
+    text-transform: none;
+}
+
+.newsletter .heading5 {
+    color: white;
+}
 
 /* Typography */
 .heading1 {
@@ -261,7 +343,7 @@ p {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .nb {
