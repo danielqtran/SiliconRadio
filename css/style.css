@@ -357,3 +357,7 @@ p {
     font-size: 20px;
     flex: 1;
 }
+
+.fab, .fas {
+    cursor: pointer;
+}
