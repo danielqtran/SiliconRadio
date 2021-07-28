@@ -195,8 +195,7 @@
 }
 
 .upcoming .card-img-overlay {
-    display: grid;
-    align-content: center;
+    padding-top: 60px;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -369,6 +368,36 @@ p {
 @media only screen and (max-width: 1920px) {
     .upcoming .heading1 {
         font-size: 4.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1440px) {
+    .upcoming .heading1 {
+        font-size: 3rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .upcoming .heading1 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        margin: .25rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .chip {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .upcoming .heading1 {
+        font-size: 1.5rem;
     }
     
 }
