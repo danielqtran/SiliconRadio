@@ -140,6 +140,10 @@
     background-color: #333333;
 }
 
+.cardImg {
+    display: grid;
+}
+
 .btn-secondary {
     background-color: #D5D921;
     border-radius: 20px;
@@ -187,7 +191,7 @@
 
 .upcoming .heading1 {
     color: white;
-    font-size: 6.25rem;
+    font-size: 6rem;
 }
 
 .upcoming .card-img-overlay {
@@ -360,4 +364,11 @@ p {
 
 .fab, .fas {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1920px) {
+    .upcoming .heading1 {
+        font-size: 4.5rem;
+    }
+    
 }
