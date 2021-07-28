@@ -116,8 +116,30 @@
 
 /* Latest */
 
-.latest {
+.latest .card-body {
+    background-color: black;
+}
+
+.latest .card-title {
+    color: white;
+}
+
+.latest,
+.newsletter {
+    background-color: black;
     padding: 1.5rem;
+}
+
+.latest .heading3pre {
+    color: #D5D921;
+}
+
+.latest .heading3 {
+    color: white;
+}
+
+.latest .card {
+    border: 2px solid white;
 }
 
 /* Cards */
@@ -174,18 +196,8 @@
 
 /* Upcoming */
 
-.upcoming,
-.newsletter {
-    background-color: black;
+.upcoming {
     padding: 1.5rem;
-}
-
-.upcoming .heading3pre {
-    color: #D5D921;
-}
-
-.upcoming .heading3 {
-    color: white;
 }
 
 .upcoming .heading1 {
@@ -197,16 +209,6 @@
     padding-top: 60px;
     padding-left: 60px;
     padding-right: 60px;
-}
-
-.upcoming .card-body {
-    background-color: black;
-    border: 2px solid white;
-}
-
-.upcoming .heading4,
-.heading4sub {
-    color: white;
 }
 
 /* Curations */
