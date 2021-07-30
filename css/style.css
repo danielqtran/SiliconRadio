@@ -323,9 +323,22 @@ footer .nav-link:hover {
 
 /* Page Title */
 
+.pageTitle {
+    background-color: black;
+}
+
 .preTitle {
     display: flex;
     justify-content: space-between;
+}
+
+.pageTitle .heading3pre {
+    color: #D5D921
+}
+
+.pageTitle .heading3,
+.heading3sub {
+    color: white;
 }
 
 /* Indivdual Session Page */
@@ -340,19 +353,53 @@ footer .nav-link:hover {
 }
 
 .djBio .card-body {
-    background-color: white;
+    background-color: black;
 }
 
 .djBio .card-body a {
-    color: black;
+    color: white;
 }
 
 .djBio .card-body a:hover {
-    color:#691AEC;
+    color: #691AEC;
 }
 
 .djLinks {
     margin-top: 1rem;
+}
+
+.tracklist ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.tracklist li {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: none;
+    padding-bottom: .5rem;
+}
+
+.djBio {
+    background-color: black;
+}
+
+.djBio .col-md-8 {
+    background-color: black;
+}
+
+.djBio .row {
+    border: 2px solid white;
+}
+
+.djBio .card-body {
+    color: white !important;
+}
+
+.djPastshows {
+    margin-bottom: 4rem;
 }
 
 /* Typography */
