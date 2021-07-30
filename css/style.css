@@ -167,6 +167,39 @@
     border: 2px solid white;
 }
 
+/* Past Session */
+
+.pastsession .card-body {
+    background-color: white;
+}
+
+.pastsession .card-title {
+    color: black;
+}
+
+.pastsession
+{
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.newsletter {
+    background-color: black;
+    padding: 1.5rem;
+}
+
+.pastsession .heading3pre {
+    color: #D5D921;
+}
+
+.pastsession .heading3 {
+    color: black;
+}
+
+.pastsession .card {
+    border: 2px solid black;
+}
+
 /* Cards */
 .card {
     border: 2px solid black;
@@ -219,6 +252,27 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.card-img-caption {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+  }
+    
+  .card-img-caption .card-img-top {
+    z-index: 0;
+  }
+      
+  .card-img-caption .card-text {
+    text-align: center;
+    width: 100%;
+    margin: 44% 0;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Space Mono', monospace;
+    font-size: 27px;
+    color: white;
+  }
+
 
 /* Upcoming */
 
@@ -487,6 +541,21 @@ p {
 .fab,
 .fas {
     cursor: pointer;
+}
+
+
+/*Sessions*/
+
+.heroSessions {
+    color: white !important;
+    height: 727px;
+    background-color: lightblue;
+    text-align: center;
+    font-family: 'Bungee', sans-serif;
+    background-image: url(../images/sessionshero.png);
+    background-position: center;
+    display: grid;
+    align-content: center;
 }
 
 /* Media Query */
