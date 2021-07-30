@@ -557,6 +557,19 @@ p {
     align-content: center;
 }
 
+/*Curations*/
+
+.heroCurations {
+    color: white !important;
+    height: 727px;
+    background-color: black;
+    text-align: center;
+    font-family: 'Bungee', sans-serif;
+    background-position: center;
+    display: grid;
+    align-content: center;
+}
+
 /* Media Query */
 
 @media only screen and (max-width: 1920px) {
