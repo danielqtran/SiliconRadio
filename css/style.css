@@ -464,7 +464,7 @@ footer .nav-link:hover {
 
 .heading1 {
     font-family: 'Bungee', sans-serif;
-    font-size: 105px;
+    font-size: 75px;
 }
 
 .heading2 {
@@ -499,7 +499,6 @@ footer .nav-link:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
-    text-transform: uppercase;
 }
 
 .heading4sub {
