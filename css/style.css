@@ -96,21 +96,46 @@
     border: 2px solid black;
 }
 
-.scrollingWelcome .heading1 {
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
-    transform: translateX(100%);
-    animation: marquee 15s linear infinite;
+
+/* .scrollingWelcome {
+    display: grid;
+    justify-content: center;
+} */
+
+.scrollAnimate .scrollItem {
+    animation: rotateWords 12s ease-in-out infinite backwards;
+    position: absolute;
+    margin-left: 15vw;
 }
 
-@keyframes marquee {
+.scrollAnimate .scrollItem:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.scrollAnimate .scrollItem:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.scrollAnimate .scrollItem:nth-child(4) {
+    animation-delay: 9s;
+}
+
+@keyframes rotateWords {
     0% {
-        transform: translateX(100%);
+        opacity: 0;
+        transform: translateX(-70%);
     }
 
+    7%,
+    24% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    43%,
     100% {
-        transform: translateX(-100%);
+        opacity: 0;
+        transform: translateX(70%);
     }
 }
 
@@ -153,8 +178,9 @@
 }
 
 .chip {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    justify-content: end;
+    align-items: end;
 }
 
 .card img {
@@ -219,10 +245,6 @@
 
 .curations .card-body {
     background-color: white;
-}
-
-.curations .heading4 {
-    
 }
 
 /* Footer */
@@ -295,6 +317,44 @@ footer .nav-link:hover {
     color: white;
 }
 
+.newsletter form {
+    margin-top: 0.5rem;
+}
+
+/* Page Title */
+
+.preTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Indivdual Session Page */
+
+.embedStream {
+    display: grid;
+    justify-content: center;
+}
+
+.embedStream p {
+    margin-top: 1rem;
+}
+
+.djBio .card-body {
+    background-color: white;
+}
+
+.djBio .card-body a {
+    color: black;
+}
+
+.djBio .card-body a:hover {
+    color:#691AEC;
+}
+
+.djLinks {
+    margin-top: 1rem;
+}
+
 /* Typography */
 
 .heading1 {
@@ -311,6 +371,7 @@ footer .nav-link:hover {
     font-family: 'Space Mono', monospace;
     font-size: 26px;
     color: #62586C;
+    margin-top: 1.5rem;
 }
 
 .heading3 {
@@ -318,6 +379,14 @@ footer .nav-link:hover {
     font-size: 50px;
     font-weight: 500px;
     text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.heading3sub {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .heading4 {
@@ -349,6 +418,7 @@ p {
     font-weight: normal;
     font-size: 20px;
     text-transform: none;
+    margin-bottom: 0 !important;
 }
 
 .nb {
