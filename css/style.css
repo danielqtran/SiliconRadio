@@ -341,6 +341,10 @@ footer .nav-link:hover {
     color: white;
 }
 
+.pageTitle .heading3sub {
+    margin-bottom: 1.5rem;
+}
+
 /* Indivdual Session Page */
 
 .embedStream {
