@@ -67,6 +67,7 @@
     font-family: 'Bungee', sans-serif;
     background-image: url(../images/hero_bg.png);
     background-position: center;
+    background-size: cover;
     display: grid;
     align-content: center;
 }
@@ -177,8 +178,7 @@
     color: black;
 }
 
-.pastsession
-{
+.pastsession {
     background-color: white;
     padding: 1.5rem;
 }
@@ -256,13 +256,13 @@
 .card-img-caption {
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
-  }
-    
-  .card-img-caption .card-img-top {
+}
+
+.card-img-caption .card-img-top {
     z-index: 0;
-  }
-      
-  .card-img-caption .card-text {
+}
+
+.card-img-caption .card-text {
     text-align: center;
     width: 100%;
     margin: 44% 0;
@@ -271,9 +271,9 @@
     font-family: 'Space Mono', monospace;
     font-size: 27px;
     color: white;
-  }
+}
 
-  .card-text-big{
+.card-text-big {
     text-align: center;
     width: 100%;
     margin: 20% 0;
@@ -282,7 +282,7 @@
     font-family: 'Space Mono', monospace;
     font-size: 27px;
     color: white;
-  }
+}
 
 
 /* Upcoming */
@@ -455,7 +455,8 @@ footer .nav-link:hover {
     background-color: black;
 }
 
-.djBio .col-md-8, .col-md-4 {
+.djBio .col-md-8,
+.col-md-4 {
     background-color: black;
 }
 
@@ -566,6 +567,7 @@ p {
     background-position: center;
     display: grid;
     align-content: center;
+    background-size: cover;
 }
 
 /*Curations Main Page*/
@@ -581,6 +583,7 @@ p {
     align-content: center;
 
 }
+
 /*
 .words{
     overflow: hidden;
@@ -622,6 +625,23 @@ span{
 
 }*/
 
+/* Community */
+
+#heroCommunity {
+    background-image: none !important;
+    background-color: black;
+    height: 30vh !important;
+    text-align: left !important;
+}
+
+.benefits {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
 /* Media Query */
 
 @media only screen and (max-width: 1920px) {
@@ -649,7 +669,10 @@ span{
 }
 
 @media only screen and (max-width: 600px) {
-    .chip, .socialLinks, .nav {
+
+    .chip,
+    .socialLinks,
+    .nav {
         flex-direction: column;
     }
 }
