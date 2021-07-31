@@ -319,7 +319,7 @@ footer {
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 3fr 1fr;
     grid-template-areas: "footerLinks socialLinks""copyright socialLinks";
-    padding: 3rem 1.5rem;
+    /* padding: 3rem 1.5rem; */
 }
 
 footer .nav {
@@ -455,7 +455,7 @@ footer .nav-link:hover {
     background-color: black;
 }
 
-.djBio .col-md-8 {
+.djBio .col-md-8, .col-md-4 {
     background-color: black;
 }
 
@@ -649,7 +649,7 @@ span{
 }
 
 @media only screen and (max-width: 600px) {
-    .chip {
+    .chip, .socialLinks, .nav {
         flex-direction: column;
     }
 }
