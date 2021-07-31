@@ -273,6 +273,17 @@
     color: white;
   }
 
+  .card-text-big{
+    text-align: center;
+    width: 100%;
+    margin: 20% 0;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Space Mono', monospace;
+    font-size: 27px;
+    color: white;
+  }
+
 
 /* Upcoming */
 
@@ -557,7 +568,7 @@ p {
     align-content: center;
 }
 
-/*Curations*/
+/*Curations Main Page*/
 
 .heroCurations {
     color: white !important;
@@ -568,7 +579,48 @@ p {
     background-position: center;
     display: grid;
     align-content: center;
+
 }
+/*
+.words{
+    overflow: hidden;
+}
+
+span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    border: 1px solid orange;
+    animation: spin_words 6s infinite;
+}
+
+@keyframes spin_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+
+}*/
 
 /* Media Query */
 
