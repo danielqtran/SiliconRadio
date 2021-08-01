@@ -206,8 +206,16 @@
     border-radius: 0px;
 }
 
+.card2 {
+    border-radius: 0px;
+}
+
 .card-body {
     background-color: #F1F1F1;
+}
+
+.card-body2 {
+    background-color: white;
 }
 
 .chip {
@@ -682,6 +690,15 @@ p {
 
 .card-footer {
     background-color: #F1F1F1 !important;
+    border: 0px;
+    display: flex;
+    justify-content: end;
+    padding: 0px;
+}
+
+.card-footer2 {
+    background-color: white !important;
+    color: #691AEC;
     border: 0px;
     display: flex;
     justify-content: end;
