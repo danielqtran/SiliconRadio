@@ -569,7 +569,7 @@ p {
     color: white !important;
     height: 727px;
     background-color: lightblue;
-    text-align: center;
+    /* text-align: center; */
     font-family: 'Bungee', sans-serif;
     background-image: url(../images/sessionshero.png);
     background-position: center;
@@ -731,7 +731,7 @@ p {
 #heroCommunity {
     background-image: none !important;
     background-color: black;
-    height: 30vh !important;
+    height: auto !important;
     text-align: left !important;
 }
 
