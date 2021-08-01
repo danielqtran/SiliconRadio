@@ -582,8 +582,8 @@ p {
     cursor: pointer;
 }
 
-.pastsession .card-title:hover {
-    background-color: #691AEC;
+.pastsession .card:hover {
+    box-shadow: 7px 7px #691AEC;
 }
 
 /*Curations Main Page*/
