@@ -9,7 +9,7 @@
     position: sticky;
     justify-content: flex-start;
     font-family: 'Rubik', sans-serif;
-    text-transform: uppercase;
+    text-transform: upfercase;
 }
 
 .mediaBar i {
@@ -516,6 +516,7 @@ footer .nav-link:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
+   
 }
 
 .heading4sub {
@@ -595,11 +596,19 @@ p {
     align-content: center;
 }
 
-.pairings .heading4,
-p {
+.heading4
+{
     font-weight: bold;
     color: black;
 }
+
+.pairings .heading4
+ {
+    font-weight: bold;
+    color: white;
+}
+
+
 
 .wrapper {
     /* width: 100%; */
