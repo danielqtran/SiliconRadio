@@ -730,6 +730,11 @@ p {
     font-size: 20px;
 }
 
+/*Icon Style*/
+fas{
+ font-size: larger;
+}
+
 
 /* Media Query */
 
