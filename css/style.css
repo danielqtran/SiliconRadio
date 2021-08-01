@@ -616,7 +616,6 @@ p {
 }
 
 
-
 .wrapper {
     /* width: 100%; */
     position: relative;
@@ -782,6 +781,11 @@ p {
     }
 
     .hero {
+        background-position: left;
+        height: auto;
+    }
+    
+    .heroSessions{
         background-position: left;
         height: auto;
     }
