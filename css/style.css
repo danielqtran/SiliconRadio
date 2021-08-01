@@ -9,7 +9,7 @@
     position: sticky;
     justify-content: flex-start;
     font-family: 'Rubik', sans-serif;
-    text-transform: uppercase;
+    text-transform: upfercase;
 }
 
 .mediaBar i {
@@ -51,6 +51,8 @@
     flex: 1;
     margin-right: 0px;
 }
+
+
 
 .search {
     flex: 1;
@@ -206,8 +208,16 @@
     border-radius: 0px;
 }
 
+.card2 {
+    border-radius: 0px;
+}
+
 .card-body {
     background-color: #F1F1F1;
+}
+
+.card-body2 {
+    background-color: white;
 }
 
 .chip {
@@ -508,6 +518,7 @@ footer .nav-link:hover {
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
+   
 }
 
 .heading4sub {
@@ -587,11 +598,23 @@ p {
     align-content: center;
 }
 
-.pairings .heading4,
-p {
+
+.heading4
+{
+    font-weight: bold;
+    color: black;
+}
+
+.heroCurations .heading3 {
+    text-transform: lowercase;
+}
+
+.pairings .heading4
+ {
     font-weight: bold;
     color: white;
 }
+
 
 .wrapper {
     /* width: 100%; */
@@ -614,6 +637,7 @@ p {
 
 .rotate span {
     animation: rotateWords 15s ease-in-out infinite;
+    color: #691AEC;
 }
 
 .words span:nth-child(2) {
@@ -693,6 +717,15 @@ p {
     padding: 0px;
 }
 
+.card-footer2 {
+    background-color: white !important;
+    color: #691AEC;
+    border: 0px;
+    display: flex;
+    justify-content: end;
+    padding: 0px;
+}
+
 /* Community */
 
 #heroCommunity {
@@ -708,7 +741,6 @@ p {
     font-weight: normal;
     font-size: 20px;
 }
-
 
 /* Media Query */
 
@@ -754,6 +786,11 @@ p {
     }
 
     .hero {
+        background-position: left;
+        height: auto;
+    }
+    
+    .heroSessions{
         background-position: left;
         height: auto;
     }
