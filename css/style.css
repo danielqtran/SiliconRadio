@@ -666,11 +666,16 @@ p {
     }
 }
 
-.collections .card {
+.collections .card,
+.pairings .card {
     cursor: pointer;
 }
 
-.collections .card-text:hover {
+.collections .card:hover {
+    border: 2px solid #691AEC;
+}
+
+.pairings .card:hover {
     background-color: #691AEC;
 }
 
