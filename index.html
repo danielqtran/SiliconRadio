@@ -26,7 +26,7 @@
         <i class="fas fa-play"></i>
         <p>Play me a random show</p>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pb-3">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,14 +48,15 @@
             </div>
             <div>
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="100" alt=""></a></div>
-            <div class="search" style="font-size: 40px; color:black;">
-                <a href="search.html">
-                <i class="fas fa-search"></i></a>
+            <div class="search">
+                <a href="search.html" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i></a>
             </div>
         </div>
     </nav>
     <section>
         <div class="hero p-3">
+            <img src="images/vinyl3.webp" alt="" id="wtRecord">
             <div class="heroContent row">
                 <section class="wrapper">
                     <div class="sentence heading1">
@@ -71,20 +72,20 @@
                 </section>
                 <div class="heading3">Catch your favorite DJs playing rare and worldy grooves in live sessions</div>
                 <div class="heroCTA mt-4">
-                    <button class="btn btn-light">Start Spinning</button>
+                    <button class="btn btn-light" id="startSpinning">Start Spinning</button>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <section class="upcoming">
+    <section class="upcoming p-3">
         <div class="heading3pre">Upcoming</div>
         <div class="heading3">Grooves from djs all over the world</div>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card h-100">
+                <div class="card">
                     <div class="cardImg">
-                        <img src="images/image_12.png" class="card-img" alt="...">
+                        <img src="images/image_12.png" class="card-img img-fluid" alt="...">
                         <div class="card-img-overlay">
                             <p class="heading1">Head Sounds: The Music of Loretta</p>
                             <p class="heading1">Disco House Sat Jun 23 12:00 PM</p>
@@ -100,7 +101,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card">
                     <img src="images/image_13.png" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <p class="heading1">Serpentine Park Nights: Jata Moboca</p>
@@ -120,7 +121,7 @@
             <button class="btn btn-light">See All ></button>
         </div>
     </section>
-    <section class="latest">
+    <section class="latest p-3">
         <div class="heading3pre">The Latest</div>
         <div class="heading3">Listen back to recent shows</div>
         <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
@@ -260,7 +261,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <section class="curations">
+    <section class="curations p-3">
         <div class="heading3pre">Curations</div>
         <div class="heading3">Hidden gem of the week</div>
         <div class="card mb-4">
@@ -291,7 +292,7 @@
             </div>
         </div>
     </section>
-    <section class="newsletter text-center ps-3 pe-3">
+    <section class="newsletter text-center">
         <div class="container-fluid">
             <div class="newsletterHeadings row">
                 <p class="heading3">Fresh beats to your inbox</p>
@@ -303,18 +304,19 @@
                         placeholder="Email"></div>
                 <div class="col-auto"><button type="submit" class="btn btn-light">I'm in!</button></div>
             </form>
-        </div>     
+        </div>
     </section>
-    <footer class="p-3">
+    <footer class="p-3 pt-5 pe-5">
         <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><strong>Silicon Radio</strong></a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Get Updates</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Secret Society</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="session-103.html">Store</a>
@@ -324,6 +326,31 @@
                 class="fab fa-soundcloud"></i><i class="fab fa-twitch"></i><i class="fab fa-instagram"></i></div>
         <div class="copyright">Copyright © Silicon Radio 2021</div>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title heading3sub text-dark" id="searchModalLabel">Search Silicon Radio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="search"
+                            aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">Search</span>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-light">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
 
 </html>
