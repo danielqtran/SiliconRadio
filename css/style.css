@@ -347,6 +347,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: black;
 }
 
 
@@ -673,6 +674,7 @@ p {
 .pairings .heading4 {
     font-weight: bold;
     color: white;
+    background-color: black;
 }
 
 
