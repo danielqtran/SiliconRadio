@@ -792,10 +792,18 @@ p {
 /* Community */
 
 #heroCommunity {
-    background-image: none !important;
+    background-image: url(../images/community.png) !important;
     background-color: black;
-    height: auto !important;
     text-align: left !important;
+    height: 727px;
+    font-family: 'Bungee', sans-serif;
+    background-position: center;
+    align-content: center;
+    display: grid;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .benefits {
@@ -853,7 +861,7 @@ p {
         height: auto;
     }
 
-    .heroSessions {
+    .heroSessions .heroCurations #heroCommunity {
         background-position: left;
         height: auto;
     }
