@@ -637,7 +637,7 @@ p {
 
 .rotate span {
     animation: rotateWords 15s ease-in-out infinite;
-    color: #691AEC;
+    color: white;
 }
 
 .words span:nth-child(2) {
