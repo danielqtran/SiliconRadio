@@ -657,6 +657,8 @@ p {
     background-color: black;
     font-family: 'Bungee', sans-serif;
     background-position: center;
+    background-image: url(../images/cura.png);
+    align-content: center;
     display: grid;
     align-content: center;
 }
