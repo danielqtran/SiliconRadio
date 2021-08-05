@@ -117,6 +117,7 @@
         transform: translateX(55%);
         transform: rotate(0deg);
     }
+
     100% {
         opacity: 1;
         transform: translateX(55%);
@@ -206,7 +207,7 @@
     border: 2px solid white;
 }
 
-.latest .card:hover{
+.latest .card:hover {
     box-shadow: 7px 7px #691AEC;
 }
 
@@ -382,7 +383,11 @@
 }
 
 .pairings .card:hover {
-        box-shadow: 7px 7px #691AEC;
+    box-shadow: 7px 7px #691AEC;
+}
+
+.djPastshows .card:hover {
+    box-shadow: 7px 7px #691AEC;
 }
 
 /* Footer */
