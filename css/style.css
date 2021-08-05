@@ -791,6 +791,9 @@ p {
     padding: 0px;
 }
 
+.latest p{
+    color: white;
+}
 /* Community */
 
 #heroCommunity {
